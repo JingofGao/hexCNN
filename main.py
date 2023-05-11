@@ -29,7 +29,7 @@ def main(args):
 
         result = 0
         ensemble_acc = []
-        print('#training ...')
+        print('#testing ...')
         for idx in range(args.ensemble_num):
             ofn = '{}/{}_f{}_e{}.pt'.format(args.output_filename, args.model_name, f, idx)
             if args.model_name == "GCN":
